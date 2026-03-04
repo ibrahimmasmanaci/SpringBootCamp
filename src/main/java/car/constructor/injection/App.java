@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationConstructorInjection.xml");
-        Car myCar = (Car) context.getBean("myCar");
-        myCar.displayDetails();
+        Car myCarBean = (Car) context.getBean("myCar");
+        myCarBean.displayDetails();
     }
 }
